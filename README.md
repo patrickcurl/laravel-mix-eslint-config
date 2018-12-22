@@ -8,16 +8,8 @@
 # Laravel Mix Eslint Config
 
 This is a modified/extended version of laravel-mix-eslint -- which allows for more customization,
-or you can just use the defaults, which has the following config: 
-```js
-  {  
-    enforce: 'pre',
-    test: /\.(js|vue)$/,
-    exclude: /node_modules/,
-    loader: 'eslint-loader',
-    options: {}
-  }
-```
+or you can just use the defaults configuration settings.
+
 
 The original extension could only customize config.options but all other config options were not editable, e.g.: 'compiler', 'enforce', 'exclude', 'include', 'issuer', 'loader', 'loaders', 'oneOf', 'options', 'parser', 'query', 'resolve', 'resource', 'resourceQuery', 'rules', 'sideEffects', 'test', 'type', 'use'. 
 
@@ -56,6 +48,19 @@ mix
     })
     .less('resources/assets/less/app.less', 'public/css');
 ```
+
+Passing in a config object is optional, if you choose not to go that route, you can just use mix.eslint(), which will use the defaults: 
+
+```js
+  {  
+    enforce: 'pre',
+    test: /\.(js|vue)$/,
+    exclude: /node_modules/,
+    loader: 'eslint-loader',
+    options: {}
+  }
+```
+
 
 You can pass an object with options for the [eslint-loader](https://github.com/webpack-contrib/eslint-loader) to the `mix.eslint()` function.
 

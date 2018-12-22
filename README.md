@@ -49,6 +49,8 @@ mix
     .less('resources/assets/less/app.less', 'public/css');
 ```
 
+You can pass an object with options for the [eslint-loader](https://github.com/webpack-contrib/eslint-loader) to the `mix.eslint()` function.
+
 Passing in a config object is optional, if you choose not to go that route, you can just use mix.eslint(), which will use the defaults: 
 
 ```js
@@ -60,8 +62,5 @@ Passing in a config object is optional, if you choose not to go that route, you 
     options: {}
   }
 ```
-
-
-You can pass an object with options for the [eslint-loader](https://github.com/webpack-contrib/eslint-loader) to the `mix.eslint()` function.
 
 And you're done! Compile everything down with `npm run dev`.

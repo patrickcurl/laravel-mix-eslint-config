@@ -9,7 +9,7 @@
 
 This is a modified/extended version of laravel-mix-eslint -- which allows for more customization. 
 
-The original extension could only customize config.options but all other config options were not editable, e.g. 'config.test', 'config.enforce', 'config.loader'. 
+The original extension could only customize config.options but all other config options were not editable, e.g.: 'compiler', 'enforce', 'exclude', 'include', 'issuer', 'loader', 'loaders', 'oneOf', 'options', 'parser', 'query', 'resolve', 'resource', 'resourceQuery', 'rules', 'sideEffects', 'test', 'type', 'use'. 
 
 This extension provides instant Eslint support to your Mix (v2.1 and up) builds, and is configurable for both react and vue.
 

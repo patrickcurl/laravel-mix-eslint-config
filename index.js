@@ -30,6 +30,9 @@ class Eslint {
       config.exclude = Array.isArray(config.exclude)
         ? config.exclude.map(ex => { return new RegExp(ex) })
         : config.exclude
+      config.include = Array.isArray(config.include)
+        ? config.include.map(ex => { return new RegExp(ex) })
+        : config.include
 
       config.test = Array.isArray(config.test)
         ? (Regexp(RegExp(`\\.(${config.test.join('|')})$`)))
